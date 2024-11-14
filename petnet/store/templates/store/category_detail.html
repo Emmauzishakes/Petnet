@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{category.title}}{% endblock title %}
+
+{% block main-content %}
+    <h1 class="text-2xl">{{category.title}}</h1>
+    
+    {% include "store/partials/products.html" %}
+{% endblock main-content %}
